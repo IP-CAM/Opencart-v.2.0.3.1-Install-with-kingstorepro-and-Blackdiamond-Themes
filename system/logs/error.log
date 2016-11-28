@@ -1,0 +1,41 @@
+2016-11-27 14:28:12 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:28:12 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:34:13 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:34:13 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:36:41 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:36:41 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:37:35 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:37:35 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:39:59 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:39:59 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:40:29 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:40:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:40:35 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:40:35 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:26 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:26 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:43 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:43 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:52 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:45:52 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:46:20 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:46:20 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:46:57 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:46:57 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:48:39 - PHP Notice:  Undefined variable: analytics in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 14:48:39 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/OC/catalog/view/theme/blackdiamond/template/common/header.tpl on line 36
+2016-11-27 19:48:08 - PHP Notice:  Undefined variable: currencies in /var/www/OC/system/library/currency.php on line 28
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_left in /var/www/OC/system/library/currency.php on line 54
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_right in /var/www/OC/system/library/currency.php on line 55
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: decimal_place in /var/www/OC/system/library/currency.php on line 56
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: value in /var/www/OC/system/library/currency.php on line 64
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_left in /var/www/OC/system/library/currency.php on line 54
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_right in /var/www/OC/system/library/currency.php on line 55
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: decimal_place in /var/www/OC/system/library/currency.php on line 56
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: value in /var/www/OC/system/library/currency.php on line 64
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_left in /var/www/OC/system/library/currency.php on line 54
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: symbol_right in /var/www/OC/system/library/currency.php on line 55
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: decimal_place in /var/www/OC/system/library/currency.php on line 56
+2016-11-27 19:57:08 - PHP Notice:  Undefined index: value in /var/www/OC/system/library/currency.php on line 64
+2016-11-28 10:38:15 - PHP Notice:  Undefined index: links in /var/www/OC/catalog/controller/common/header.php on line 11
+2016-11-28 10:38:42 - PHP Notice:  Array to string conversion in /var/www/OC/catalog/controller/common/header.php on line 16
