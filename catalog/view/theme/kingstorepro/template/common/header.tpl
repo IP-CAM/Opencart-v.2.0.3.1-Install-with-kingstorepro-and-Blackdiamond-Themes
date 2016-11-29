@@ -8,6 +8,8 @@ $config = $this->registry->get('config');
 require_once( DIR_TEMPLATE.$config->get('config_template')."/lib/module.php" );
 $modules = new Modules($this->registry);
 ?>
+
+
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="<?php echo $lang; ?>" class="ie7 responsive"> <![endif]-->  
 <!--[if IE 8]> <html lang="<?php echo $lang; ?>" class="ie8 responsive"> <![endif]-->  

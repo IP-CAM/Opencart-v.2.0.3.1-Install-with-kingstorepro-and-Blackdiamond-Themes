@@ -40,6 +40,14 @@ require_once( DIR_TEMPLATE.$config->get('config_template')."/lib/module.php" );
 $modules = new Modules($this->registry);
 ?>
 
+<?php
+ $col=50;
+$file=file("base.log"); ?>
+<?php
+if ($col>sizeof($file)) { $col=sizeof($file); } ?>
+
+
+
 <!-- MAIN CONTENT
 	================================================== -->
 <div class="main-content full-width home">
@@ -305,6 +313,95 @@ $modules = new Modules($this->registry);
 									<?php } ?>
 						</div>
 						<?php } ?>
-			
 
+
+
+		
+
+<script type="text/javascript">
+
+window.onload= function() {
+	document.getElementById('toggler').onclick = function() {
+		openbox('box', this);
+		return false;
+	};
+};
+function openbox(id, toggler) {
+	var div = document.getElementById(id);
+	if(div.style.display == 'block') {
+		div.style.display = 'none';
+		toggler.innerHTML = 'Для графика';
+	}
+	else {
+		div.style.display = 'block';
+		toggler.innerHTML = 'Закрыть';
+	}
+}
+</script>
+<button id="toggler" style="margin:10px">Для графика</a></button>
+<div id="box" style="display: none;"><div id="placeholder" style="width:600px;height:300px;"></div>
+<table width="680" cellspacing="1" cellpadding="1" border="0" style="margin:20px"
+    style="table-layout:fixed">
+<tr bgcolor="white" >
+ <td class="zz" width="100" font-size="6pt"><b>Время, дата</b></td>
+ <td class="zz" width="150" font-size="6pt"><b>Кто посещал</b></td>
+ <td class="zz" width="100" font-size="6pt"><b>IP, прокси</b></td>
+ <td class="zz" width="150" font-size="6pt"><b>Посещенный URL</b></td>
+</tr>
+
+<?php
+   for ($si=sizeof($file)-1; $si+1>sizeof($file)-$col; $si--) {
+   $string=explode("|",$file[$si]);
+   $q1[$si]=$string[0]; // дата и время
+   $q2[$si]=$string[1]; // имя бота
+   $q3[$si]=$string[2]; // ip бота
+   $q4[$si]=$string[3]; // адрес посещения
+if($q4[$si]=="localhost:8002/index.php?route=common/home"){
+echo '<tr bgcolor="white"><td class="zz">'.$q1[$si].'</td>';
+echo '<td class="zz">'.$q2[$si].'</td>';
+echo '<td class="zz">'.$q3[$si].'</td>';
+echo '<td class="zz">'.$q4[$si].'</td></tr>';
+}
+}
+echo '</table>';
+
+?>	
+</div>
+<script language="javascript" type="text/javascript" src="catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+<!--[if IE]><script language="javascript" type="text/javascript" src="flot/excanvas.min.js"></script><![endif]-->
+  <script language="javascript" type="text/javascript" src="catalog/view/javascript/jquery/flot/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="catalog/view/javascript/jquery/flot/jquery.flot.js"></script>
+  <script language="javascript" type="text/javascript" src="catalog/view/javascript/jquery/flot/jquery.flot.time.js"></script>
+<!-- <div id="placeholder" style="width:600px;height:300px;"></div> -->
+
+<script language="javascript" type="text/javascript">
+
+var all_data = [
+  { data: [
+           ["2016/11/25", 0], ["2016/11/26", 0],
+           ["2016/11/27", 0], ["2016/11/28", 8],
+           ["2016/11/29", 20], ["2016/11/30", 0]]}
+];
+// преобразуем даты в UTC
+for(var j = 0; j < all_data.length; ++j) {
+ for(var i = 0; i < all_data[j].data.length; ++i){
+   all_data[j].data[i][0] = Date.parse(all_data[j].data[i][0]);
+ }
+}
+// свойства графика
+var plot_conf = {
+ series: {
+   lines: { 
+     show: true,
+     lineWidth: 2 
+   }
+ },
+ xaxis: {
+   mode: "time",
+   timeformat: "%y/%m/%d",
+ }
+};
+// выводим график
+$.plot($("#placeholder"), all_data, plot_conf);
+</script>
 <?php echo $footer; ?>
